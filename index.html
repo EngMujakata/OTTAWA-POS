@@ -8,7 +8,7 @@
   <link rel="apple-touch-icon" href="logo.png">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <title>MONACO POS | Login</title>
+  <title>OTTAWA POS | Login</title>
   <style>
     :root {
       --primary: #003366;
@@ -977,7 +977,7 @@
         <div class="login-logo">
           <img src="logo.png" alt="Logo" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'60\' height=\'60\' viewBox=\'0 0 60 60\'><rect width=\'60\' height=\'60\' fill=\'%23003366\'/><text x=\'30\' y=\'38\' font-size=\'24\' fill=\'white\' text-anchor=\'middle\'>HM</text></svg>'">
         </div>
-        <h1 class="login-title">MONACO POS</h1>
+        <h1 class="login-title">OTTAWA POS</h1>
         <p class="login-subtitle">Login to continue</p>
       </div>
       <form id="loginForm">
@@ -1097,7 +1097,7 @@
     <header>
       <div class="header-logo">
         <img src="logo.png" alt="Logo" onerror="this.style.display='none'">
-        <span>MONACO POS</span>
+        <span>SPARK POS</span>
       </div>
       <div class="user-info">
         <span id="welcomeMessage"></span>
@@ -1253,15 +1253,15 @@
 <script>
   // Configuration
   const ADMIN_PASSWORD = "123";
-  const PRODUCTS_API_ENDPOINT = "https://script.google.com/macros/s/AKfycbxrxWe7aF1njsbEgZ9kQTIXMxRdNnIyx551xl-CIFB67JgDgyIQkOOup2RVud5hEZw/exec";
-  const SALES_API_ENDPOINT = "https://script.google.com/macros/s/AKfycbyBc0xzZopT11OJiOREhkh8e4Au0yc0Vgiw8j3gJ778wSwxk-JEH-1c8-hLcuks9wo/exec";
-  const ACCOUNTS_API_ENDPOINT = "https://script.google.com/macros/s/AKfycbz42CdP2jbpSIh95LYHz0CqMWpRj9_u4g3GtlmDr9mupZHURDW9jGno3PKoZUQLGpZv/exec";
+  const PRODUCTS_API_ENDPOINT = "https://script.google.com/macros/s/AKfycbwiC_ruUSAhbExaIw60lSYsf8DjWKqu8KLYpjNh52fQshM1Svxuyn6HpF5cKIuCTndc/exec";
+  const SALES_API_ENDPOINT = "https://script.google.com/macros/s/AKfycbyyZIWw6NFX5Av4lPWEsIC48-dFdhhJjf16beVwgelkTloIXjczjoIeBa5ptEjGewc/exec";
+  const ACCOUNTS_API_ENDPOINT = "https://script.google.com/macros/s/AKfycbwNH08Lc7N1PLcohrKY8reoL5RDZYD3AUE0eApuNeILQ0-1sPDf5B6eS_-BuQWxfvEl/exec";
   const SYNC_INTERVAL = 30000;
   const PRODUCTS_PER_PAGE = 999999;
 
   // IndexedDB setup
   let db;
-  const DB_NAME = 'MONACOPOS';
+  const DB_NAME = 'OTTAWAPOS';
   const DB_VERSION = 3;
 
   // Global sync variables
@@ -2248,9 +2248,7 @@
       
       const logoHtml = `
         <div class="receipt-logo">
-        </div>
-        <div id="fallback-header" style="display: none; text-align: center;">
-          <div style="font-weight: bold; font-size: 18px;">MONACO MUTARE</div><div style="font-weight: 900; font-size: 24px; letter-spacing: 1px; text-transform: uppercase;">MONACO MUTARE</div>
+          <div style="font-weight: bold; font-size: 18px;">OTTAWA MUTARE</div><div style="font-weight: 900; font-size: 24px; letter-spacing: 1px; text-transform: uppercase;">OTTAWA MUTARE</div>
 
         </div>
       `;
@@ -2258,7 +2256,7 @@
       receiptDiv.innerHTML = `
         <div class="receipt-header">
           ${logoHtml}
-          <div class="receipt-info" style="font-weight: bold; margin-top: 5px;">0774 588 837</div>
+          <div class="receipt-info" style="font-weight: bold; margin-top: 5px;">0787571813</div>
           <div class="receipt-info">${sale.receipt_no}</div>
           <div class="receipt-info">${sale.date} ${sale.time}</div>
           <div class="receipt-info">Cashier: ${sale.cashier}</div>
